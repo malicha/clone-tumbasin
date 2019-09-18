@@ -1,29 +1,21 @@
 const styles = theme => ({
-  card: {
-    display: 'flex',
-    height: 100,
-    padding: 3,
-    marginRight: 0,
-    marginLeft: 0
-  },
   details: {
     display: 'flex',
     flexDirection: 'column',
   },
   media: {
-    width: 100,
+    width: 85,
     borderRadius: 5,
-    margin: 10,
-    height: 'cover'
+    marginTop: 10,
+    height: 80
   },
   button: {
-    margin: theme.spacing(1),
     backgroundColor: '#F15B5D',
     color: '#ffffff',
     borderRadius: 8,
     justifyContent: 'center',
     width: '-webkit-fill-available',
-    marginTop: 8,
+    marginTop: 0,
     marginRight: 8,
     marginLeft: 8,
     minWidth: '40px',

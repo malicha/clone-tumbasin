@@ -10,7 +10,7 @@ class App extends Component {
       <div className="App">
         <Switch>
           {/* <Route path='/' exact component={Home} /> */}
-          <Route path='/detail-product' component={DetailProduct} />
+          {/* <Route path='/detail-product' component={DetailProduct} /> */}
           <Route path='/cart' component={Cart} />
         </Switch>
       </div>

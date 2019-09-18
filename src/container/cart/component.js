@@ -14,10 +14,10 @@ class Component extends React.Component {
                 <Appbar title='Keranjang Belanja' />
                 <CssBaseline />
                 <Paper className={classes.root}>
-                    <Grid className={classes.listTitle}>
+                    <div container spacing={0} style={{ justifyContent: 'space-between', display: 'flex' }}>
                         <strong style={{ color: '#14181B' }}>Total produk: 1</strong>
-                        <b style={{ color: '#F15B5D' }}>Tambah lagi</b>
-                    </Grid>
+                        <b style={{ color: '#F15B5D', justifyContent: 'flex-end' }}>Tambah lagi</b>
+                    </div>
                     <div>
                         <CardCart />
                     </div>
