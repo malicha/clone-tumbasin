@@ -9,28 +9,22 @@ const styles = theme => ({
         marginBottom: 56,
         padding: 0
     },
+    content: {
+        padding: '12px',
+        marginLeft: '1em'
+    },
     title: {
-        display: 'flex',
+        color: '#4E5356',
+        fontFamily: 'Montserrat, sans-serif',
+        fontSize: '0.875rem'
     },
-    list: {
-        margin: '1em',
-        marginTop: 20,
+    btn: {
         display: 'flex',
-        justifyContent: 'space-between'
-    },
-    button: {
-        margin: theme.spacing(1),
-        backgroundColor: '#F15B5D',
-        color: '#ffffff',
-        borderRadius: 8,
-        justifyContent: 'center',
+        justifyContent: 'flex-end',
         width: '-webkit-fill-available',
-        marginTop: 8,
-        marginRight: 8,
-        marginLeft: 8,
-        minWidth: '40px',
-        fontWeight: 'bold'
-    },
+        marginTop: 0,
+        marginRight: '1em'
+    }
 });
 
 export default styles;

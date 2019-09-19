@@ -8,14 +8,21 @@ const styles = theme => ({
     padding: theme.spacing(3, 2),
     height: 600
   },
-  listTitle: {
-    fontSize: 16,
-    marginBottom: 4,
-    marginTop: 4,
-    marginLeft: 8,
+  girdItemRight: {
     display: 'flex',
-    justifyContent: 'space-around'
+    justifyContent: 'flex-end'
   },
+  girdItemLeft: {
+    display: 'flex',
+    justifyContent: 'flex-start'
+  },
+  paper: {
+    bottom: 0,
+    color: 'red',
+    height: 70,
+    padding: theme.spacing(3, 2),
+  }
+
 
 });
 

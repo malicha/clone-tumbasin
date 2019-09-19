@@ -18,7 +18,7 @@ const styles = theme => ({
   title: {
     flexGrow: 1,
     color: '#14181B',
-    fontSize: 14
+    fontSize: 14,
   },
 });
 

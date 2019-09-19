@@ -6,21 +6,37 @@ const styles = theme => ({
   media: {
     width: 85,
     borderRadius: 5,
-    marginTop: 10,
-    height: 80
+    height: 80,
+  },
+  price: {
+    color: '#14181B',
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: '12px'
   },
   button: {
-    backgroundColor: '#F15B5D',
-    color: '#ffffff',
-    borderRadius: 8,
-    justifyContent: 'center',
+    display: 'flex',
+    justifyContent: 'flex-end',
     width: '-webkit-fill-available',
-    marginTop: 0,
-    marginRight: 8,
-    marginLeft: 8,
-    minWidth: '40px',
-    fontWeight: 'bold'
   },
+  title: {
+    color: '#4E5356',
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: '0.875rem'
+  },
+  cardOrder: {
+    borderBottom: '1px solid #F1F2F6',
+    height: 100
+  },
+  gridItemPrice: {
+    alignItem: 'flex-end',
+    display: 'flex',
+    marginTop: 40
+  },
+  cardOrderItemRight: {
+    alignItem: 'flex-end',
+    display: 'flex',
+    marginTop: '3.5em'
+  }
 });
 
 export default styles;

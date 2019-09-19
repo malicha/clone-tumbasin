@@ -9,31 +9,38 @@ class Component extends React.Component {
     render() {
         const { classes } = this.props
         return (
-            <Grid container spacing={0}>
-                <Grid item xs={3}>
-                    <img className={classes.media} src='https://ecs7.tokopedia.net/img/cache/700/product-1/2017/12/17/25837688/25837688_ddbcd449-9cb8-4a7a-a182-50bd8626d979_642_478.jpg' />
-                </Grid>
-                <Grid item xs={9}>
-                    <Grid item xs={12} style={{ justifyContent: 'left', paddingBottom: '15px' }}>
-                        <CardContent className={classes.content} style={{ padding: '12px' }}>
-                            <Typography style={{ color: '#4E5356', fontFamily: 'Montserrat, sans-serif', fontSize: '0.875rem' }}>
-                                Ayam Potong
-                                </Typography>
-                            <span >
-                                <b style={{ color: '#14181B', fontFamily: 'Montserrat, sans-serif', fontSize: '12px' }}>Rp 3.2000</b> <b style={{ color: '#C7C7C9', fontSize: '10px' }}>/1kg</b>
-                            </span>
-                        </CardContent>
+            <Grid container spacing={0} className={classes.cardOrder}>
+                <Grid item xs={4} className={classes.cardOrderItemLeft}>
+                    <Grid container spacing={0}>
+                        <img className={classes.media}
+                            src=
+                            'https://ecs7.tokopedia.net/img/cache/700/product-1/2017/12/17/25837688/25837688_ddbcd449-9cb8-4a7a-a182-50bd8626d979_642_478.jpg' />
                     </Grid>
-                    <Grid item xs={12}>
+                </Grid>
+                <Grid item xs={4} className={classes.cardOrderItemCenter}>
+                    <Grid container spacing={0}>
+                        <Typography className={classes.title}>
+                            Ayam Potong
+                        </Typography>
+                    </Grid>
+                    <Grid container spacing={0} className={classes.gridItemPrice}>
+                        <span>
+                            <b className={classes.price}>Rp 32.000</b>
+                            <b style={{
+                                color: '#C7C7C9',
+                                fontSize: '10px'
+                            }}
+                            >/1kg
+                                </b>
+                        </span>
+                    </Grid>
+                </Grid>
+                <Grid item xs={4} className={classes.cardOrderItemRight} >
+                    <Grid container spacing={0}>
                         <ButtonGroup
                             size="small"
                             aria-label="Small outlined button group"
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'flex-end',
-                                width: '-webkit-fill-available',
-                                marginTop: 0
-                            }}
+                            className={classes.button}
                         >
                             <Button
                                 style={{
