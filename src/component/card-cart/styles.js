@@ -7,6 +7,7 @@ const styles = theme => ({
     width: 85,
     borderRadius: 5,
     height: 80,
+
   },
   price: {
     color: '#14181B',
@@ -16,8 +17,7 @@ const styles = theme => ({
   },
   button: {
     display: 'flex',
-    justifyContent: 'flex-end',
-    width: '-webkit-fill-available',
+    justifyContent: 'flex-start',
   },
   title: {
     color: '#4E5356',
@@ -40,16 +40,19 @@ const styles = theme => ({
   },
   buttonMin: {
     color: '#153b50',
-    borderRadius: 4,
-    minWidth: '40px',
+    fontWeight: 'bold',
+    borderRadius: 3,
+    minWidth: '28px',
     height: '30px',
-    position: 'inherit'
+    border: '1px solid #E5E5E5',
+    backgroundColor: '#ffffff',
+
   },
   buttonCount: {
     border: '0',
     fontWeight: 'bold',
     fontSize: 16,
-    minWidth: '40px',
+    minWidth: '28px',
     height: '30px',
     position: 'inherit'
   },
@@ -57,9 +60,17 @@ const styles = theme => ({
     color: '#ffffff',
     backgroundColor: '#F15B5D',
     borderRadius: 4,
-    minWidth: '40px',
+    fontWeight: 'bold',
+    minWidth: '28px',
     height: '30px',
-    position: 'inherit'
+    hover: 'none'
+  },
+  textButton: {
+    marginTop: '-3px'
+  },
+  unit: {
+    color: '#C7C7C9',
+    fontSize: '10px'
   }
 });
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // import Home from './container/home'
-import DetailProduct from './container/detail-product'
 import { Route, Switch } from 'react-router-dom'
 import Cart from './container/cart'
 

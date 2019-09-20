@@ -10,17 +10,19 @@ class Component extends React.Component {
   render() {
     const { classes, title } = this.props;
     return (
-      <Box position="static" className={classes.boxAppbar}>
-        <Toolbar variant="dense">
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            aria-label="Menu"
-          >
-            <BackButton />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>{title}</Typography>
-        </Toolbar>
+      <Box position="static" justifyContent='center' display='flex'>
+        <AppBar className={classes.boxAppbar} position="static">
+          <Toolbar variant="dense">
+            <IconButton
+              edge="start"
+              className={classes.menuButton}
+              aria-label="Menu"
+            >
+              <BackButton />
+            </IconButton>
+            <Typography variant="h6" className={classes.title}>{title}</Typography>
+          </Toolbar>
+        </AppBar>
       </Box>
     );
   }

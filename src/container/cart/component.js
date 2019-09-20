@@ -5,7 +5,7 @@ import CardCart from '../../component/card-cart'
 import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
-import Divider from '@material-ui/core/Divider'
+import data from '../../data/index'
 
 class Component extends React.Component {
     render() {
@@ -16,46 +16,22 @@ class Component extends React.Component {
                 <Box className={classes.box}>
                     <Grid container spacing={0} className={classes.order}>
                         <Grid item xs={6} className={classes.girdItemLeft}>
-                            <Typography style={{
-                                color: '#14181B',
-                                fontSize: 12,
-                                fontFamily: 'Montserrat, sans-serif',
-                                fontWeight: 'bold',
-                            }}>
+                            <Typography className={classes.itemLeft}>
                                 Total produk: 1
                             </Typography>
                         </Grid>
                         <Grid item xs={6} className={classes.girdItemRight}>
-                            <Typography style={{
-                                color: '#F15B5D',
-                                fontSize: 12,
-                                fontFamily: 'Montserrat, sans-serif',
-                                fontWeight: 'bold',
-                            }}>
+                            <Typography className={classes.itemRight}>
                                 Tambah lagi
                             </Typography>
                         </Grid>
                     </Grid>
-                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
-                        <CardCart />
-                    </Grid>
-                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
-                        <CardCart />
-                    </Grid>
-                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
-                        <CardCart />
-                    </Grid>
-                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
-                        <CardCart />
-                    </Grid>
-                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
-                        <CardCart />
-                    </Grid>
-                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
-                        <CardCart />
-                    </Grid>
-                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
-                        <CardCart />
+                    <Grid container spacing={0} className={classes.gridCard}>
+                        {data.map(cart => {
+                            return (
+                                <CardCart cart={cart} />
+                            )
+                        })}
                     </Grid>
                 </Box>
             </Container>

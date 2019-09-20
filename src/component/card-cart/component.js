@@ -2,55 +2,73 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
-import ButtonGroup from '@material-ui/core/ButtonGroup'
 
 class Component extends React.Component {
+    state = {
+        count: 0
+    }
+
+    minus = () => {
+        this.setState({
+            count: this.state.count - 1
+        })
+    }
+
+    plus = () => {
+        this.setState({
+            count: this.state.count + 1
+        })
+    }
     render() {
-        const { classes } = this.props
+        const { classes, cart } = this.props
         return (
             <Grid container spacing={0} className={classes.cardOrder}>
                 <Grid item xs={4} className={classes.cardOrderItemLeft}>
                     <Grid container spacing={0}>
-                        <img className={classes.media}
-                            src=
-                            'https://ecs7.tokopedia.net/img/cache/700/product-1/2017/12/17/25837688/25837688_ddbcd449-9cb8-4a7a-a182-50bd8626d979_642_478.jpg' />
+                        <Grid item>
+                            <img className={classes.media}
+                                src={cart.image} />
+                        </Grid>
                     </Grid>
                 </Grid>
                 <Grid item xs={4} className={classes.cardOrderItemCenter}>
                     <Grid container spacing={0}>
-                        <Typography className={classes.title}>
-                            Ayam Potong
-                        </Typography>
+                        <Grid item xs>
+                            <Typography className={classes.title}>
+                                {cart.name}
+                            </Typography>
+                        </Grid>
                     </Grid>
                     <Grid container spacing={0} className={classes.gridItemPrice}>
-                        <span>
-                            <b className={classes.price}>Rp 32.000</b>
-                            <b style={{
-                                color: '#C7C7C9',
-                                fontSize: '10px'
-                            }}
-                            >/1kg
-                            </b>
-                        </span>
+                        <b className={classes.price}>Rp. {cart.price}</b>
+                        <b className={classes.unit}
+                        >{cart.meta_data}
+                        </b>
                     </Grid>
                 </Grid>
-                <Grid item xs={4} className={classes.cardOrderItemRight} >
-                    <Grid container spacing={0}>
-                        <ButtonGroup
-                            size="small"
-                            aria-label="Small outlined button group"
-                            className={classes.button}
-                        >
-                            <Button className={classes.buttonMin}>
-                                -
+                <Grid item xs={4} className={classes.cardOrderItemRight}>
+                    <Grid container spacing={0} className={classes.button}>
+                        <Grid>
+                            <Button className={classes.buttonMin} onClick={this.minus}>
+                                <Typography className={classes.textButton}>
+                                    -
+                                </Typography>
                             </Button>
+                        </Grid>
+                        <Grid>
                             <Button className={classes.buttonCount}>
-                                1
+                                <Typography className={classes.textButton}>
+                                    {this.state.count}
+                                </Typography>
                             </Button>
-                            <Button className={classes.buttonPLus}>
-                                +
+                        </Grid>
+                        <Grid>
+                            <Button className={classes.buttonPLus} onClick={this.plus}>
+                                <Typography className={classes.textButton}>
+                                    +
+                                </Typography>
                             </Button>
-                        </ButtonGroup>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>

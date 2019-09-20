@@ -10,6 +10,7 @@ const styles = theme => ({
     maxWidth: 448,
     position: 'fixed',
     top: 0,
+    boxShadow: 'none',
     borderBottom: '1px solid #F1F2F6',
   },
   menuButton: {

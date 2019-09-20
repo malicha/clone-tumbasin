@@ -23,6 +23,22 @@ const styles = theme => ({
   },
   order: {
     paddingTop: 15,
+  },
+  gridCard: {
+    paddingTop: 13
+
+  },
+  itemLeft: {
+    color: '#14181B',
+    fontSize: 12,
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 'bold',
+  },
+  itemRight: {
+    color: '#F15B5D',
+    fontSize: 12,
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 'bold',
   }
 });
 
