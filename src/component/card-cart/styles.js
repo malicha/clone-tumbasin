@@ -11,7 +11,8 @@ const styles = theme => ({
   price: {
     color: '#14181B',
     fontFamily: 'Montserrat, sans-serif',
-    fontSize: '12px'
+    fontSize: '12px',
+    fontWeight: 'bold'
   },
   button: {
     display: 'flex',
@@ -30,12 +31,35 @@ const styles = theme => ({
   gridItemPrice: {
     alignItem: 'flex-end',
     display: 'flex',
-    marginTop: 40
+    marginTop: 40,
   },
   cardOrderItemRight: {
     alignItem: 'flex-end',
     display: 'flex',
     marginTop: '3.5em'
+  },
+  buttonMin: {
+    color: '#153b50',
+    borderRadius: 4,
+    minWidth: '40px',
+    height: '30px',
+    position: 'inherit'
+  },
+  buttonCount: {
+    border: '0',
+    fontWeight: 'bold',
+    fontSize: 16,
+    minWidth: '40px',
+    height: '30px',
+    position: 'inherit'
+  },
+  buttonPLus: {
+    color: '#ffffff',
+    backgroundColor: '#F15B5D',
+    borderRadius: 4,
+    minWidth: '40px',
+    height: '30px',
+    position: 'inherit'
   }
 });
 

@@ -14,16 +14,16 @@ const styles = theme => ({
   },
   girdItemLeft: {
     display: 'flex',
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
   },
-  paper: {
-    bottom: 0,
-    color: 'red',
-    height: 70,
-    padding: theme.spacing(3, 2),
+  box: {
+    backgroundColor: '#FFFFFF',
+    width: '100%',
+    maxWidth: 448,
+  },
+  order: {
+    paddingTop: 15,
   }
-
-
 });
 
 export default styles;

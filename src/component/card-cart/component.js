@@ -1,5 +1,4 @@
 import React from 'react'
-import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
@@ -31,7 +30,7 @@ class Component extends React.Component {
                                 fontSize: '10px'
                             }}
                             >/1kg
-                                </b>
+                            </b>
                         </span>
                     </Grid>
                 </Grid>
@@ -42,36 +41,13 @@ class Component extends React.Component {
                             aria-label="Small outlined button group"
                             className={classes.button}
                         >
-                            <Button
-                                style={{
-                                    color: '#153b50',
-                                    borderRadius: 4,
-                                    minWidth: '40px',
-                                    height: '30px'
-                                }}
-                            >
+                            <Button className={classes.buttonMin}>
                                 -
                             </Button>
-                            <Button
-                                style={{
-                                    border: '0',
-                                    fontWeight: 'bold',
-                                    fontSize: 16,
-                                    minWidth: '40px',
-                                    height: '30px'
-                                }}
-                            >
+                            <Button className={classes.buttonCount}>
                                 1
                             </Button>
-                            <Button
-                                style={{
-                                    color: '#ffffff',
-                                    backgroundColor: '#F15B5D',
-                                    borderRadius: 4,
-                                    minWidth: '40px',
-                                    height: '30px'
-                                }}
-                            >
+                            <Button className={classes.buttonPLus}>
                                 +
                             </Button>
                         </ButtonGroup>

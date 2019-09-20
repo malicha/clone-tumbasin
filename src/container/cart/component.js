@@ -1,11 +1,11 @@
 import React from 'react'
 import Appbar from '../../component/app-bar'
 import Container from '@material-ui/core/Container'
-import { CssBaseline } from '@material-ui/core';
 import CardCart from '../../component/card-cart'
-import Paper from '@material-ui/core/Paper'
+import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
-import Button from '@material-ui/core/Button'
+import Typography from '@material-ui/core/Typography'
+import Divider from '@material-ui/core/Divider'
 
 class Component extends React.Component {
     render() {
@@ -13,33 +13,51 @@ class Component extends React.Component {
         return (
             <Container component="main" maxWidth="xs" className={classes.container}>
                 <Appbar title='Keranjang Belanja' />
-                <CssBaseline />
-                <Paper className={classes.root}>
+                <Box className={classes.box}>
                     <Grid container spacing={0} className={classes.order}>
                         <Grid item xs={6} className={classes.girdItemLeft}>
-                            <b style={{
+                            <Typography style={{
                                 color: '#14181B',
                                 fontSize: 12,
-                                fontFamily: 'Montserrat, sans-serif'
+                                fontFamily: 'Montserrat, sans-serif',
+                                fontWeight: 'bold',
                             }}>
                                 Total produk: 1
-                            </b>
+                            </Typography>
                         </Grid>
                         <Grid item xs={6} className={classes.girdItemRight}>
-                            <b style={{
+                            <Typography style={{
                                 color: '#F15B5D',
                                 fontSize: 12,
                                 fontFamily: 'Montserrat, sans-serif',
-
+                                fontWeight: 'bold',
                             }}>
                                 Tambah lagi
-                            </b>
+                            </Typography>
                         </Grid>
                     </Grid>
                     <Grid container spacing={0} style={{ paddingTop: 13 }}>
                         <CardCart />
                     </Grid>
-                </Paper>
+                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
+                        <CardCart />
+                    </Grid>
+                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
+                        <CardCart />
+                    </Grid>
+                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
+                        <CardCart />
+                    </Grid>
+                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
+                        <CardCart />
+                    </Grid>
+                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
+                        <CardCart />
+                    </Grid>
+                    <Grid container spacing={0} style={{ paddingTop: 13 }}>
+                        <CardCart />
+                    </Grid>
+                </Box>
             </Container>
         )
     }

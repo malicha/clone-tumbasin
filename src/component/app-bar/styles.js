@@ -3,13 +3,14 @@ const styles = theme => ({
   root: {
     flexGrow: 1
   },
-  appbar: {
+  boxAppbar: {
     backgroundColor: '#FFFFFF',
     color: '#14181B',
     width: '100%',
     maxWidth: 448,
     position: 'fixed',
     top: 0,
+    borderBottom: '1px solid #F1F2F6',
   },
   menuButton: {
     marginRigth: theme.spacing(2),
