@@ -17,7 +17,7 @@ class Component extends React.Component {
                     <Grid container spacing={0} className={classes.order}>
                         <Grid item xs={6} className={classes.girdItemLeft}>
                             <Typography className={classes.itemLeft}>
-                                Total produk: 1
+                                Total produk:
                             </Typography>
                         </Grid>
                         <Grid item xs={6} className={classes.girdItemRight}>
@@ -27,11 +27,13 @@ class Component extends React.Component {
                         </Grid>
                     </Grid>
                     <Grid container spacing={0} className={classes.gridCard}>
-                        {data.map(cart => {
-                            return (
-                                <CardCart cart={cart} />
-                            )
-                        })}
+                        <Grid item xs={12}>
+                            {data.map(cart => {
+                                return (
+                                    <CardCart cart={cart} />
+                                )
+                            })}
+                        </Grid>
                     </Grid>
                 </Box>
             </Container>

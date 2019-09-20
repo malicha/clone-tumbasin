@@ -26,7 +26,9 @@ const styles = theme => ({
   },
   cardOrder: {
     borderBottom: '1px solid #F1F2F6',
-    height: 100
+    height: 100,
+    paddingTop: 13,
+    paddingBottom: 10
   },
   gridItemPrice: {
     alignItem: 'flex-end',
@@ -36,7 +38,7 @@ const styles = theme => ({
   cardOrderItemRight: {
     alignItem: 'flex-end',
     display: 'flex',
-    marginTop: '3.5em'
+    marginTop: '3em'
   },
   buttonMin: {
     color: '#153b50',
@@ -47,14 +49,6 @@ const styles = theme => ({
     border: '1px solid #E5E5E5',
     backgroundColor: '#ffffff',
 
-  },
-  buttonCount: {
-    border: '0',
-    fontWeight: 'bold',
-    fontSize: 16,
-    minWidth: '28px',
-    height: '30px',
-    position: 'inherit'
   },
   buttonPLus: {
     color: '#ffffff',

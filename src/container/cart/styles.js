@@ -25,7 +25,7 @@ const styles = theme => ({
     paddingTop: 15,
   },
   gridCard: {
-    paddingTop: 13
+    // paddingTop: 13
 
   },
   itemLeft: {
