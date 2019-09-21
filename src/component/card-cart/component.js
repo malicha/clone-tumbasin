@@ -2,7 +2,6 @@ import React from 'react'
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
-
 class Component extends React.Component {
     state = {
         count: 0
@@ -48,29 +47,24 @@ class Component extends React.Component {
                 </Grid>
                 <Grid item xs={4} className={classes.cardOrderItemRight}>
                     <Grid container spacing={0} className={classes.button}>
-                        <Grid>
-                            <Button className={classes.buttonMin} onClick={this.minus}>
-                                <Typography className={classes.textButton}>
-                                    -
-                                </Typography>
-                            </Button>
-                        </Grid>
-                        <Grid>
-                            <Button className={classes.buttonCount}>
-                                <Typography className={classes.textButton}>
-                                    {this.state.count}
-                                </Typography>
-                            </Button>
-                        </Grid>
-                        <Grid>
-                            <Button className={classes.buttonPLus} onClick={this.plus}>
-                                <Typography className={classes.textButton}>
-                                    +
-                                </Typography>
-                            </Button>
-                        </Grid>
+                        <Button className={classes.buttonMin} onClick={this.minus}>
+                            <Typography className={classes.textButton}>
+                                -
+                            </Typography>
+                        </Button>
+                        <Button className={classes.buttonCount}>
+                            <Typography className={classes.textButtonCount}>
+                                {this.state.count}
+                            </Typography>
+                        </Button>
+                        <Button className={classes.buttonPLus} onClick={this.plus}>
+                            <Typography className={classes.textButton}>
+                                +
+                            </Typography>
+                        </Button>
                     </Grid>
                 </Grid>
+
             </Grid>
         )
     }

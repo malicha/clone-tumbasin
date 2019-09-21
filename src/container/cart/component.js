@@ -6,6 +6,7 @@ import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import data from '../../data/index'
+import Divider from '@material-ui/core/Divider'
 
 class Component extends React.Component {
     render() {
@@ -27,7 +28,7 @@ class Component extends React.Component {
                         </Grid>
                     </Grid>
                     <Grid container spacing={0} className={classes.gridCard}>
-                        <Grid item xs={12}>
+                        <Grid item xs={12} style={{ paddingLeft: 14, paddingRight: 14 }}>
                             {data.map(cart => {
                                 return (
                                     <CardCart cart={cart} />

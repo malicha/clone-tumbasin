@@ -25,7 +25,6 @@ const styles = theme => ({
     fontSize: '0.875rem'
   },
   cardOrder: {
-    borderBottom: '1px solid #F1F2F6',
     height: 100,
     paddingTop: 13,
     paddingBottom: 10
@@ -57,7 +56,6 @@ const styles = theme => ({
     fontWeight: 'bold',
     minWidth: '28px',
     height: '30px',
-    hover: 'none'
   },
   textButton: {
     marginTop: '-3px'
@@ -65,6 +63,16 @@ const styles = theme => ({
   unit: {
     color: '#C7C7C9',
     fontSize: '10px'
+  },
+  buttonCount: {
+    minWidth: '30px',
+
+  },
+  textButtonCount: {
+    fontWeight: '800',
+    fontSize: '12px',
+    color: '#14181B',
+    lineHeight: '14px'
   }
 });
 
