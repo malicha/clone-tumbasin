@@ -13,7 +13,8 @@ const styles = theme => ({
     color: '#14181B',
     fontFamily: 'Montserrat, sans-serif',
     fontSize: '12px',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+
   },
   button: {
     display: 'flex',
@@ -26,8 +27,10 @@ const styles = theme => ({
   },
   cardOrder: {
     height: 100,
-    paddingTop: 13,
-    paddingBottom: 10
+    paddingBottom: 10,
+    paddingTop: 10,
+    paddingLeft: 15,
+    borderBottom: '1px solid #F1F2F6'
   },
   gridItemPrice: {
     alignItem: 'flex-end',
@@ -37,7 +40,8 @@ const styles = theme => ({
   cardOrderItemRight: {
     alignItem: 'flex-end',
     display: 'flex',
-    marginTop: '3em'
+    marginTop: '3em',
+    paddingLeft: 15
   },
   buttonMin: {
     color: '#153b50',
@@ -66,13 +70,16 @@ const styles = theme => ({
   },
   buttonCount: {
     minWidth: '30px',
-
   },
   textButtonCount: {
     fontWeight: '800',
     fontSize: '12px',
     color: '#14181B',
     lineHeight: '14px'
+  },
+  gridPrice: {
+    alignItem: 'flex-end',
+    display: 'flex'
   }
 });
 

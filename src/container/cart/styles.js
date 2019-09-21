@@ -22,11 +22,7 @@ const styles = theme => ({
     maxWidth: 448,
   },
   order: {
-    paddingTop: 15,
-  },
-  gridCard: {
-    padding: 14
-
+    padding: 15
   },
   itemLeft: {
     color: '#14181B',
