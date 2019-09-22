@@ -5,13 +5,8 @@ const styles = theme => ({
         borderRadius: 5,
     },
     container: {
-        marginTop: 48,
         marginBottom: 56,
         padding: 0
-    },
-    content: {
-        padding: '12px',
-        marginLeft: '1em'
     },
     title: {
         color: '#4E5356',
@@ -24,6 +19,50 @@ const styles = theme => ({
         width: '-webkit-fill-available',
         marginTop: 0,
         marginRight: '1em'
+    },
+    unit: {
+        color: '#C7C7C9',
+        fontSize: '0.875rem',
+        fontWeight: 'bold'
+    },
+    buttonMin: {
+        color: '#153b50',
+        borderRadius: 4,
+        minWidth: '40px',
+        height: '30px'
+    },
+    count: {
+        border: '0',
+        fontWeight: 'bold',
+        fontSize: 16,
+        minWidth: '40px',
+        height: '30px'
+    },
+    buttonPlus: {
+        color: '#ffffff',
+
+        borderRadius: 4,
+        minWidth: '40px',
+        height: '30px'
+    },
+    gridItemLeft: {
+        display: 'flex', paddingLeft: '1em'
+
+    },
+    gridDeskrip: {
+        paddingLeft: '1em',
+        paddingTop: '2em'
+
+    },
+    deskrip: {
+        fontSize: '0.875rem',
+        color: '#4E5356'
+    },
+    gridMedia: {
+        paddingTop: 50
+    },
+    gridPrice: {
+        display: 'flex', paddingLeft: '1em'
     }
 });
 

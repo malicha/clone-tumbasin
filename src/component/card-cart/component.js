@@ -49,21 +49,27 @@ class Component extends React.Component {
                 </Grid>
                 <Grid item xs={4} className={classes.cardOrderItemRight}>
                     <Grid container spacing={0} className={classes.button}>
-                        <Button className={classes.buttonMin} onClick={this.minus}>
-                            <Typography className={classes.textButton}>
-                                -
+                        <Grid item xs>
+                            <Button className={classes.buttonMin} onClick={this.minus}>
+                                <Typography className={classes.textButton}>
+                                    -
                             </Typography>
-                        </Button>
-                        <Button className={classes.buttonCount}>
+                            </Button>
+                        </Grid>
+                        <Grid className={classes.buttonCount}>
                             <Typography className={classes.textButtonCount}>
                                 {this.state.count}
                             </Typography>
-                        </Button>
-                        <Button className={classes.buttonPLus} onClick={this.plus}>
-                            <Typography className={classes.textButton}>
-                                +
+                        </Grid>
+                        <Grid item xs>
+                            <Button className={classes.buttonPLus}
+                                onClick={this.plus}
+                                style={{ backgroundColor: '#F15B5D' }}>
+                                <Typography className={classes.textButton}>
+                                    +
                             </Typography>
-                        </Button>
+                            </Button>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>

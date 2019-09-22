@@ -55,7 +55,6 @@ const styles = theme => ({
   },
   buttonPLus: {
     color: '#ffffff',
-    backgroundColor: '#F15B5D',
     borderRadius: 4,
     fontWeight: 'bold',
     minWidth: '28px',
@@ -75,11 +74,17 @@ const styles = theme => ({
     fontWeight: '800',
     fontSize: '12px',
     color: '#14181B',
-    lineHeight: '14px'
+    lineHeight: '14px',
+    display: 'flex',
+    justifyContent: 'center',
   },
   gridPrice: {
     alignItem: 'flex-end',
-    display: 'flex'
+    display: 'flex',
+    marginBottom: 10
+  },
+  cardOrderItemCenter: {
+    marginLeft: 10
   }
 });
 

@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import ButtonGroup from '@material-ui/core/ButtonGroup'
 import Button from '@material-ui/core/Button'
-import CardContent from '@material-ui/core/CardContent'
 
 class Component extends React.Component {
     render() {
@@ -14,85 +13,58 @@ class Component extends React.Component {
         return (
             <Container component="main" maxWidth="xs" className={classes.container}>
                 <Appbar title='Detail Produk' />
-                <CardMedia
-                    className={classes.media}
-                    image=
-                    'https://ecs7.tokopedia.net/img/cache/700/product-1/2017/12/17/25837688/25837688_ddbcd449-9cb8-4a7a-a182-50bd8626d979_642_478.jpg'
-                />
-                <Grid container spacing={0}>
-                    <Grid item xs={8}>
-                        <CardContent className={classes.content}>
-                            <b className={classes.title}>
-                                Ayam Potong
-                            </b>
-                            <span >
-                                <b style={{
-                                    color: '#C7C7C9',
-                                    fontSize: '10px'
-                                }}>
-                                    /1kg
-                                </b>
-                            </span>
-                        </CardContent>
+                <Grid container spacing={0} >
+                    <Grid item xs className={classes.gridMedia}>
+                        <CardMedia
+                            className={classes.media}
+                            image=
+                            'https://ecs7.tokopedia.net/img/cache/700/product-1/2017/12/17/25837688/25837688_ddbcd449-9cb8-4a7a-a182-50bd8626d979_642_478.jpg'
+                        />
                     </Grid>
-                    <Grid item xs={4}>
-                        <ButtonGroup
-                            size="small"
-                            aria-label="Small outlined button group"
-                            className={classes.btn}
-                        >
-                            <Button
-                                style={{
-                                    color: '#153b50',
-                                    borderRadius: 4,
-                                    minWidth: '40px',
-                                    height: '30px'
-                                }}
+                    <Grid container spacing={0} className={classes.gridContent}>
+                        <Grid item xs={6} className={classes.gridItemLeft}>
+                            <Typography className={classes.title}>Ayam Potong</Typography>
+                            <Typography className={classes.unit}>/1kg</Typography>
+                        </Grid>
+                        <Grid item xs={6} className={classes.gridButton}>
+                            <ButtonGroup
+                                size="small"
+                                aria-label="Small outlined button group"
+                                className={classes.btn}
                             >
+                                <Button className={classes.buttonMin}>-</Button>
+                                <Button className={classes.count}>1</Button>
+                                <Button className={classes.buttonPlus}
+                                    style={{
+                                        backgroundColor: '#F15B5D'
+                                    }}>
+                                    +
+                                </Button>
+                            </ButtonGroup>
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={0}>
+                        <Grid item xs className={classes.gridPrice}>
+                            <Typography style={{ color: '#4E5356' }}>Harga: </Typography>
+                            <Typography style={{
+                                color: '#14181B',
+                                fontWeight: 'bold'
+                            }}>Rp. 5000 </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={0} className={classes.gridDeskrip}>
+                        <Grid item xs>
+                            <Typography className={classes.deskrip}>Deskripsi produk:</Typography>
+                            <Typography style={{
+                                color: '#14181B',
+                                fontSize: 11
+                            }}>
                                 -
-                            </Button>
-                            <Button
-                                style={{
-                                    border: '0',
-                                    fontWeight: 'bold',
-                                    fontSize: 16,
-                                    minWidth: '40px',
-                                    height: '30px'
-                                }}
-                            >
-                                1
-                            </Button>
-                            <Button
-                                style={{
-                                    color: '#ffffff',
-                                    backgroundColor: '#F15B5D',
-                                    borderRadius: 4,
-                                    minWidth: '40px',
-                                    height: '30px'
-                                }}
-                            >
-                                +
-                            </Button>
-                        </ButtonGroup>
+                            </Typography>
+                        </Grid>
                     </Grid>
                 </Grid>
-                <div style={{ marginLeft: '1em' }}>
-                    <Container component="main" maxWidth="xs" className={classes.container}>
-                        <b style={{
-                            fontSize: 12,
-                            color: '#4E5356'
-                        }}>
-                            Deskripsi produk:
-                    </b>
-                        <Typography style={{
-                            color: '#14181B',
-                            fontSize: 11
-                        }}>
-                            Ayam yang di potong sendiri
-                    </Typography>
-                    </Container>
-                </div>
-            </Container>
+            </Container >
         )
     }
 }
