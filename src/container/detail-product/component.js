@@ -45,20 +45,20 @@ class Component extends React.Component {
                     </Grid>
                     <Grid container spacing={0}>
                         <Grid item xs className={classes.gridPrice}>
-                            <Typography style={{ color: '#4E5356' }}>Harga: </Typography>
-                            <Typography style={{
-                                color: '#14181B',
-                                fontWeight: 'bold'
-                            }}>Rp. 5000 </Typography>
+                            <Typography className={classes.priceText}>
+                                Harga:
+                            </Typography>
+                            <Typography className={classes.price}>
+                                Rp. 5000
+                            </Typography>
                         </Grid>
                     </Grid>
                     <Grid container spacing={0} className={classes.gridDeskrip}>
                         <Grid item xs>
-                            <Typography className={classes.deskrip}>Deskripsi produk:</Typography>
-                            <Typography style={{
-                                color: '#14181B',
-                                fontSize: 11
-                            }}>
+                            <Typography className={classes.deskrip}>
+                                Deskripsi produk:
+                            </Typography>
+                            <Typography className={classes.deskripText}>
                                 -
                             </Typography>
                         </Grid>

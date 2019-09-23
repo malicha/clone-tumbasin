@@ -53,6 +53,10 @@ const styles = theme => ({
         paddingTop: '2em'
 
     },
+    price: {
+        color: '#14181B',
+        fontWeight: 'bold'
+    },
     deskrip: {
         fontSize: '0.875rem',
         color: '#4E5356'
@@ -62,6 +66,13 @@ const styles = theme => ({
     },
     gridPrice: {
         display: 'flex', paddingLeft: '1em'
+    },
+    deskripText: {
+        color: '#14181B',
+        fontSize: 11
+    },
+    priceText:{
+        color: '#4E5356' 
     }
 });
 
