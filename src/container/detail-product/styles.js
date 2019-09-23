@@ -40,7 +40,6 @@ const styles = theme => ({
     },
     buttonPlus: {
         color: '#ffffff',
-
         borderRadius: 4,
         minWidth: '40px',
         height: '30px'

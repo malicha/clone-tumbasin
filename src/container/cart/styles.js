@@ -22,7 +22,9 @@ const styles = theme => ({
     maxWidth: 448,
   },
   order: {
-    padding: 15
+    paddingLeft: 15,
+    paddingRight: 15,
+    paddingTop: 15,
   },
   itemLeft: {
     color: '#14181B',
@@ -35,7 +37,7 @@ const styles = theme => ({
     fontSize: 12,
     fontFamily: 'Montserrat, sans-serif',
     fontWeight: 'bold',
-  }
+  },
 });
 
 export default styles;
