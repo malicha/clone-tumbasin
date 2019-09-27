@@ -1,11 +1,11 @@
 import React from 'react'
 import Appbar from '../../component/app-bar'
 import Container from '@material-ui/core/Container'
-import CardCart from '../../component/card-cart'
+import Product from '../../component/card-product'
 import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
-import data from '../../data/index'
+import product from '../../data/index'
 
 class Component extends React.Component {
     render() {
@@ -28,9 +28,9 @@ class Component extends React.Component {
                     </Grid>
                     <Grid container spacing={0} className={classes.gridCard}>
                         <Grid item xs>
-                            {data.map(cart => {
+                            {product.map(cart => {
                                 return (
-                                    <CardCart cart={cart} />
+                                    <Product cart={cart} />
                                 )
                             })}
                         </Grid>

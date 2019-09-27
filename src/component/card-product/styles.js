@@ -4,8 +4,8 @@ const styles = theme => ({
     flexDirection: 'column',
   },
   media: {
-    width: 85,
-    borderRadius: 5,
+    width: 95,
+    borderRadius: 4,
     height: 80,
 
   },
@@ -14,6 +14,7 @@ const styles = theme => ({
     fontFamily: 'Montserrat, sans-serif',
     fontSize: '0.875rem',
     fontWeight: 'bold',
+    paddingRight: 5,
 
   },
   button: {
@@ -35,8 +36,6 @@ const styles = theme => ({
   gridItemPrice: {
     alignItem: 'flex-end',
     display: 'flex',
-    marginTop: 26,
-
   },
   cardOrderItemRight: {
     alignItem: 'flex-end',
@@ -84,10 +83,19 @@ const styles = theme => ({
     justifyContent: 'center',
 
   },
+  disc: {
+    backgroundColor: '#F15B5D',
+    width: 60,
+    color: '#FFFFFF',
+    fontSize: '12px',
+    fontWeight: 'bold',
+    fontFamily: 'Montserrat, sans-serif',
+    textAlign: 'center',
+  },
   gridPrice: {
     alignItem: 'flex-end',
     display: 'flex',
-    paddingTop: 0
+    fontSize: 10
   },
   cardOrderItemCenter: {
     paddingLeft: 10
@@ -99,6 +107,17 @@ const styles = theme => ({
     marginTop: 0,
     marginRight: '1em'
   },
+  regularPrice: {
+    textDecoration: 'line-through',
+    fontFamily: 'Montserrat, sans-serif',
+    fontSize: '0.875rem',
+    fontWeight: 'bold',
+    color: '#C7C7C9',
+  },
+  gridItemRegularPrice: {
+    alignItem: 'center',
+    display: 'flex',
+  }
 });
 
 export default styles;

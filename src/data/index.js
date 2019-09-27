@@ -1,4 +1,4 @@
-const data = [{
+const product = [{
     id: '1',
     name: 'Telur Ayam',
     image: 'https://s.blanja.com/picspace/296/254248/408.408_fea7a6d50f224c2b993cb0823eb9060d.jpg',
@@ -10,9 +10,10 @@ const data = [{
     id: '2',
     name: 'Bayam',
     image: 'https://cdn2.tstatic.net/tribunnews/foto/bank/images/bayam_20150402_104741.jpg',
-    price: 5000,
-    regular_price: '',
-    meta_data: '/ikat'
+    price: 2500,
+    regular_price: 4500,
+    meta_data: '/ikat',
+    disc: '15%'
 },
 {
     id: '3',
@@ -63,4 +64,4 @@ const data = [{
     meta_data: '/buah'
 },]
 
-export default data;
+export default product;

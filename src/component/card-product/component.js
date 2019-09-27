@@ -27,7 +27,11 @@ class Component extends React.Component {
                 <Grid item xs={3} className={classes.cardOrderItemLeft}>
                     <Grid container spacing={0}>
                         <Grid item xs>
-                            <CardMedia className={classes.media} image={cart.image} />
+                            <CardMedia className={classes.media} image={cart.image}>
+                                <Typography className={classes.disc}>
+                                    {cart.disc ? 'Disc.' + cart.disc : ''}
+                                </Typography>
+                            </CardMedia>
                         </Grid>
                     </Grid>
                 </Grid>
@@ -39,9 +43,16 @@ class Component extends React.Component {
                             </Typography>
                         </Grid>
                     </Grid>
+                    <Grid container spacing={0}>
+                        <Grid item xs className={classes.gridItemRegularPrice}>
+                            <Typography className={classes.regularPrice}>
+                                {cart.regular_price ? 'Rp.' + cart.regular_price : ''}
+                            </Typography>
+                        </Grid>
+                    </Grid>
                     <Grid container spacing={0} className={classes.gridItemPrice}>
                         <Grid item xs className={classes.gridPrice}>
-                            <Typography className={classes.price}>Rp. {cart.price}</Typography>
+                            <Typography className={classes.price}> Rp. {cart.price}</Typography>
                             <Typography className={classes.unit}>
                                 {cart.meta_data}
                             </Typography>
