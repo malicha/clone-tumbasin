@@ -6,6 +6,7 @@ import Box from '@material-ui/core/Box'
 import Grid from '@material-ui/core/Grid'
 import Typography from '@material-ui/core/Typography'
 import product from '../../data/index'
+import Bottomsheet from '../../component/bottomsheet'
 
 class Component extends React.Component {
     render() {
@@ -35,7 +36,7 @@ class Component extends React.Component {
                             })}
                         </Grid>
                     </Grid>
-
+                    <Bottomsheet />
                 </Box>
             </Container>
         )
