@@ -37,8 +37,8 @@ class Component extends React.Component {
                 </Grid>
                 <Grid item xs={5} className={classes.cardOrderItemCenter}>
                     <Grid container spacing={0}>
-                        <Grid item xs>
-                            <Typography className={classes.title}>
+                        <Grid item xs className={classes.gridItemName}>
+                            <Typography className={classes.name}>
                                 {cart.name}
                             </Typography>
                         </Grid>
@@ -50,7 +50,7 @@ class Component extends React.Component {
                             </Typography>
                         </Grid>
                     </Grid>
-                    <Grid container spacing={0} className={classes.gridItemPrice}>
+                    <Grid container spacing={0}>
                         <Grid item xs className={classes.gridPrice}>
                             <Typography className={classes.price}> Rp. {cart.price}</Typography>
                             <Typography className={classes.unit}>

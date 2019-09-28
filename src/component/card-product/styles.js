@@ -21,7 +21,7 @@ const styles = theme => ({
     display: 'flex',
     justifyContent: 'flex-start',
   },
-  title: {
+  name: {
     color: '#4E5356',
     fontFamily: 'Montserrat, sans-serif',
     fontSize: '0.875rem'
@@ -95,7 +95,7 @@ const styles = theme => ({
   gridPrice: {
     alignItem: 'flex-end',
     display: 'flex',
-    fontSize: 10
+
   },
   cardOrderItemCenter: {
     paddingLeft: 10
@@ -117,6 +117,11 @@ const styles = theme => ({
   gridItemRegularPrice: {
     alignItem: 'center',
     display: 'flex',
+  },
+  gridItemName: {
+    display: 'flex',
+    alignItem: 'flex-start'
+
   }
 });
 

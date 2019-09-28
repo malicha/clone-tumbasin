@@ -35,6 +35,7 @@ class Component extends React.Component {
                             })}
                         </Grid>
                     </Grid>
+
                 </Box>
             </Container>
         )
