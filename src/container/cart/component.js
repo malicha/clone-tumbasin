@@ -36,7 +36,9 @@ class Component extends React.Component {
                             })}
                         </Grid>
                     </Grid>
-                    <Bottomsheet />
+                    <Grid >
+                        <Bottomsheet />
+                    </Grid>
                 </Box>
             </Container>
         )

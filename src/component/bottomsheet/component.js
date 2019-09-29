@@ -3,7 +3,8 @@ import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import InfoIcon from '@material-ui/icons/Info'
-import { IconButton } from '@material-ui/core';
+import { IconButton, Divider, Button } from '@material-ui/core';
+import StoreIcon from '@material-ui/icons/Store'
 class Component extends React.Component {
     render() {
         const { classes } = this.props
@@ -22,14 +23,41 @@ class Component extends React.Component {
                             </Typography>
                         </Grid>
                     </Grid>
-                    <Grid container spacing={0} className={classes.gridItemTop}>
+                    <Grid container spacing={0} className={classes.gridItemInfo}>
                         <Grid item xs={1}>
                             <Grid className={classes.icon}>
                                 <InfoIcon />
                             </Grid>
                         </Grid>
                         <Grid item xs={11} className={classes.info}>
-                            belum termasuk biaya antar
+                            <Typography >
+                                belum termasuk biaya antar
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Divider />
+                    <Grid container spacing={0} className={classes.gridItemTop}>
+                        <Grid item xs={4}>
+                            <Typography className={classes.itemRIght}>
+                                Kamu Belanja Di:
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <StoreIcon />
+                        </Grid>
+                        <Grid item xs={4}>
+                            <Typography className={classes.market}>
+                                Pasar Gunung Pati
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={0}>
+                        <Grid item xs>
+                            <Box className={classes.buttonBox}>
+                                <Button variant="contained" backgroundColor="#F15B5D" className={classes.button}>
+                                    Pesan
+                                </Button>
+                            </Box>
                         </Grid>
                     </Grid>
                 </Box>
