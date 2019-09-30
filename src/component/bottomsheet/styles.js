@@ -3,7 +3,6 @@ const styles = theme => ({
         width: '100%',
         backgroundColor: '#FFFFFF',
         bottom: 0,
-        marginTop: 50,
         borderTop: '1px solid #DFE4E9',
         position: 'fixed',
         maxWidth: 448,

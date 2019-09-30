@@ -36,8 +36,10 @@ class Component extends React.Component {
                             })}
                         </Grid>
                     </Grid>
-                    <Grid >
-                        <Bottomsheet />
+                    <Grid container spacing={0}>
+                        <Grid item xs className={classes.bottomSheet}>
+                            <Bottomsheet />
+                        </Grid>
                     </Grid>
                 </Box>
             </Container>

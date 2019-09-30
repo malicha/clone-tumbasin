@@ -38,6 +38,9 @@ const styles = theme => ({
     fontFamily: 'Montserrat, sans-serif',
     fontWeight: 'bold',
   },
+  bottomSheet: {
+    marginTop: 115
+  }
 });
 
 export default styles;
